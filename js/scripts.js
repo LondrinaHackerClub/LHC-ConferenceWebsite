@@ -56,3 +56,7 @@ jQuery(function ($) {
     // --------------------------------------------------------------------
 
 }); // JQuery end
+
+function playAudio() {
+    document.getElementById('audioPlayer').play();
+}

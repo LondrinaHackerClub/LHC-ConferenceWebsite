@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -27,7 +28,11 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
+
 <body id="page-top" data-spy="scroll" data-target=".navbar">
+    <audio id="audioPlayer">
+        <source src="assets/hacking_time.mp3" type="audio/mpeg">
+    </audio>
     <div id="main-wrapper">
         <!-- Page Preloader -->
         <div id="preloader">
@@ -55,11 +60,8 @@
                         <ul class="nav navbar-nav">
                             <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
                             <li class="hidden"><a href="#page-top"></a></li>
-                            <li><a class="page-scroll" href="#sobre">Sobre</a></li>
+                            <li><a class="page-scroll" href="#sobre">O Evento</a></li>
                             <li><a class="page-scroll" href="#palestras">Palestras</a></li>
-                            <li><a class="page-scroll" href="#call4paperz">Call4Paperz</a></li>
-                            <li><a class="page-scroll" href="#programacao">Programacão</a></li>
-                            <li><a class="page-scroll" href="#ingresso">Ingressos</a></li>
                             <li><a class="page-scroll" href="#staff">Staff</a></li>
                             <li><a class="page-scroll" href="#parceiros">Parceiros</a></li>
                             <li><a class="page-scroll" href="#localizacao">Localização</a></li>
@@ -69,39 +71,38 @@
                 </div>
                 <!-- /.container -->
             </nav>
-
             <!-- .nav -->
-
         </header>
 
         <div class="jumbotron text-center">
             <div class="content">
-               <div class="event-date">07 de Outubro de 2017, Londrina/PR</div>
-               <h1>Londrina Hacker Conference<br>1ª Edição</h1>
-               <p class="lead">Um evento da comunidade para a comunidade Hacker de Londrina e região.</p>
-               <button type="button" class="btn btn-default btn-lg"><a href="#ingresso">QUERO ME INSCREVER!</a></button>
-           </div>
-       </div>
-       <!-- .about-jumbotron -->
+                <div class="event-date">07 de Outubro de 2017, Londrina/PR</div>
+                <h1>Londrina Hacker Conference<br>1ª Edição</h1>
+                <p class="lead">Um evento da comunidade para a comunidade Hacker de Londrina e região.</p>
+                <button onclick="playAudio()" type="button" class="btn btn-default btn-lg"><a target="_blank" href="https://www.sympla.com.br/londrina-hacker-conference__177847">QUERO PARTICIPAR!</a></button>
+            </div>
+        </div>
+        <!-- .about-jumbotron -->
 
-       <!-- SOBRE -->
-       <section id="sobre" class="section-wrapper about-event  gray-bg">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <p class="lead">
-                      Londrina Hacker Conference 1º edição.
-                      Evento feito da comunidade para comunidade, para quem respira hacking e segurança da informação.
-                  </p>
-                  <p class="lead">
-                      O Londrina Hacker Conference irá acontecer no primeiro sábado de outubro, dia 07/10/2017, começando as 08:00hrs e terminando as 18:30hrs no auditório principal da Unopar campus Catuaí.
-                  </p>
-                  <p class="lead">
-                      Eventos com diversas atividades no decorrer do dia, com a trilha de palestras feita por profissionais renomados em segurança da informação, competição capture de flag (CTF), oficinas de arduino e food truck no local.
-                  </p>
+        <!-- SOBRE -->
+        <section id="sobre" class="section-wrapper about-event gray-bg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1> Londrina Hacker Conference 1º edição. </h1>
+                        <p class="lead">
+                            Evento feito da comunidade para comunidade, para quem respira hacking e segurança da informação.
+                        </p>
+                        <p class="lead">
+                            O Londrina Hacker Conference irá acontecer no primeiro sábado de outubro, dia <strong>07/10/2017 </strong>,
+                            começando às 13:30 e terminando quando o ultimo participante deixar o local do evento.
+                        </p>
+                        <p class="lead">
+                            Eventos com diversas palestras feita por profissionais renomados em segurança da informação.
+                        </p>
 
-              </div>
-<!--
+                    </div>
+                    <!--
                 <div class="col-md-2">
                     <address>
                         <strong>Eventas, Inc.</strong><br>
@@ -112,606 +113,350 @@
                     </address>
                 </div>
             -->
-            </div>
-        </div>
-    </section>
-<!-- .about-event -->
-
-<section id="palestras" class="section-wrapper team">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="section-title">
-                    <h1>PALESTRAS</h1>
                 </div>
             </div>
-        </div>
-        <div class="row">
+        </section>
+        <!-- .about-event -->
 
-            <div class="col-sm-12 col-md-4">
-                <figure class="thumbnail">
-                    <img src="img/Palestra Jean.jpg" class="img-responsive" alt="Image">
-                    <figcaption class="caption text-center">
-                        <h3>Jean Delefrati</h3>
-                        <h4>XGH E PHP, OU PORQUE VOCÊ DEVE USAR UM WAF</h4>
-                        <p>Muitos programadores inexperientes (ou programadores ruins mesmo) fazem "gambiarras" por não pensar direito ou por preguiça, causando vários problemas como lentidão, bugs ou permitir vetores de ataques. O objetivo da palestra é mostrar erros grotescos encontrados nos mais de 16 anos de carreira na área de programação web do palestrante e o motivo pelos quais são ruins, mantendo uma atmosfera descontraída e despojada - depois demonstrar como um WAF+CDN funcionam e como podem minimizar alguns desses problemas (mesmo não sendo uma solução mágica).</p>
-
-                        <ul class="social-links">
-                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                            <li><a href="#"><i class="fa fa-envelope"></i></a></li>
-                        </ul>
-                    </figcaption>
-                </figure>
-            </div>
-
-            <div class="col-sm-12 col-md-4">
-                <figure class="thumbnail">
-                    <img src="img/Palestra Julio.jpg" class="img-responsive" alt="Image">
-                    <figcaption class="caption text-center">
-                        <h3>Julio Della Flora</h3>
-                        <h4>HARDWARE HACKING 101: APARATOS INDISPENSÁVEIS PARA A PRÁTICA</h4>
-                        <p>A presente palestra procura introduzir conceitos de hardware hacking bem como o desenvolvimento e aplicação de gadgets modificados em testes de invasão. Estudos iniciais sobre eletrônica e instrumentos de medidas serão apresentados buscando solidificar uma base de pesquisa na área, consecutivamente será abordada a confecção de dispositivos com o objetivo de facilitar testes de invasão. Observa-se nessa etapa que produtos comerciais com preço elevado podem ser facilmente reproduzidos por uma fração de seu valor, resultando em menor dispêndio de recursos e maior aproveitamento acadêmico.</p>
-
-                        <ul class="social-links">
-                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                            <li><a href="#"><i class="fa fa-envelope"></i></a></li>
-                        </ul>
-                    </figcaption>
-                </figure>
-            </div>
-
-            <div class="col-sm-12 col-md-4">
-                <figure class="thumbnail">
-                    <img src="img/Palestra Bruno.jpg" class="img-responsive" alt="Image">
-                    <figcaption class="caption text-center">
-                        <h3>Bruno Oliveira</h3>
-                        <h4>Dia a dia de um Pentester profissional e estudo de caso</h4>
-                        <p>Apesar de sua popularidade, os serviços de teste de invasão ou penetration test ainda trazem muitas dúvidas. Muitos ainda desconhecem quais os meios de execução deste teste e como diferenciar este exercício de uma análise de vulnerabilidades automatizada. Durante esta palestra, será demonstrado como é realizado um pentest através de um estudo de caso, além de proporcionar uma visão abrangente de como é o trabalho de um profissional da área. O conteúdo será apresentado de forma a estimular os interessados e também motivar empresas do valor da realizacão deste tipo de trabalho em seu ambiente.</p>
-
-                        <ul class="social-links">
-                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                            <li><a href="#"><i class="fa fa-envelope"></i></a></li>
-                        </ul>
-                    </figcaption>
-                </figure>
-            </div>
-
-        </div>
-        <!-- .row -->
-
-        <div class="row">
-
-            <div class="col-md-12">
-                <div class="section-title">
-                    <h1>OFICINAS</h1>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="row">
-
-            <div class="col-sm-6 col-md-6">
-                <figure class="thumbnail">
-                    <img src="img/Oficina Arduino4Kids.jpg" class="img-responsive" alt="Image">
-                    <figcaption class="caption text-center">
-                        <h3>Wagner Rodrigues</h3>
-                        <h4>Arduino dos 8 aos 80</h4>
-                        <p>Convidamos você a experimentar e aprender brincando por meio de atividades práticas superdivertidas com Arduino. Traga seu irmão mais novo, neto, filho, sobrinho... queremos integrar gerações diferentes em um mesmo ambiente de eletrônica, programação e prototipação. Participe, aproveite e desfrute de um momento mão na massa.</p>
-
-                        <ul class="social-links">
-                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                            <li><a href="#"><i class="fa fa-envelope"></i></a></li>
-                        </ul>
-                    </figcaption>
-                </figure>
-            </div>
-
-            <div class="col-sm-6 col-md-6">
-                <figure class="thumbnail">
-                    <img src="img/Oficina ArduinoGeral.jpg" class="img-responsive" alt="Image">
-                    <figcaption class="caption text-center">
-                        <h3>Daniel Araujo</h3>
-                        <h4>Arduino</h4>
-                        <p>Apesar de sua popularidade, os serviços de teste de invasão ou penetration test ainda trazem muitas dúvidas. Muitos ainda desconhecem quais os meios de execução deste teste e como diferenciar este exercício de uma análise de vulnerabilidades automatizada. Durante esta palestra, será demonstrado como é realizado um pentest através de um estudo de caso, além de proporcionar uma visão abrangente de como é o trabalho de um profissional da área. O conteúdo será apresentado de forma a estimular os interessados e também motivar empresas do valor da realizacão deste tipo de trabalho em seu ambiente.</p>
-
-                        <ul class="social-links">
-                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                            <li><a href="#"><i class="fa fa-envelope"></i></a></li>
-                        </ul>
-                    </figcaption>
-                </figure>
-            </div>
-
-        </div>
-
-    </div>
-    <!-- /.container -->
-</section>
-<!-- .team -->
-
-<section id="call4paperz" class="section-wrapper team  gray-bg">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="section-title">
-                    <h2>Quer palestrar?</h2>
-                    <p>Nosso evento busca incentivar novos palestrantes, fomentando a produção local de conhecimento, caso tenha interesse em palestrar envie seu artigo para <a href="mailto:call4paperz@londrinahackerclub.com.br">call4paperz@londrinahackerclub.com.br</a></p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section id="programacao" class="section-wrapper section-agenda">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="section-title">
-                    <h1>PROGRAMAÇÃO</h1>
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-md-4">
-                <div class="session">
-                    <time>8:00 - 9:00H</time>
-                    <h2>Credenciamento</h2>
-                </div>
-                <!-- .session -->
-
-                <div class="session">
-                    <time>9:00 - 9:30H</time>
-                    <h2>Abertura</h2>
-                    <h3>Apresentação do Evento, Equipe e Patrocinadores</h3>
-                </div>
-                <!-- .session -->
-
-                <div class="session">
-                    <time>9:45 - 10:30H</time>
-                    <h2>Abrir Call for Papers <span>(Palestra Aberta)</span></h2>
-                    <h3>???<span>???</span></h3>
-                </div>
-                <!-- .session -->
-
-                <div class="session">
-                    <time>10:30 - 10:45H</time>
-                    <h2>Pause para café</h2>
-                </div>
-                <!-- .session -->
-
-
-            </div>
-            <div class="col-md-4">
-                <div class="session">
-                    <time>10:45 - 11:50H</time>
-                    <h2>Abrir Call for Papers <span>(Palestra Aberta)</span></h2>
-                    <h3>???<span>???</span></h3>
-                </div>
-                <!-- .session -->
-
-                <div class="session">
-                    <time>12:00 - 13:30H</time>
-                    <h2>Almoço</h2>
-                    <h3>Food Truck no Local</h3>
-                </div>
-                <!-- .session -->
-
-                <div class="session">
-                    <time>13:00 - 17:30H</time>
-                    <h2>Abertura CTF</h2>
-                </div>
-                <!-- .session -->
-
-
-            </div>
-            <div class="col-md-4">
-                <div class="session">
-                    <time>13:45 - 14:30H</time>
-                    <h2>XGH E PHP, OU PORQUE VOCÊ DEVE USAR UM WAF</h2>
-                    <h3>Jean Delefrati</h3>
-                </div>
-                <!-- .session -->
-
-                <div class="session">
-                    <time>14:45 - 15:30</time>
-                    <h2>*Novo Tema, ver com Wagner - Wagner </h2>
-                    <h3>Wagner Rodrigues</h3>
-                </div>
-                <!-- .session -->
-
-
-                <div class="session">
-                    <time>15:45 - 16:30</time>
-                    <h2>Palestra 5 -  em paralelo oficinas e CTF</h2>
-                </div>
-                <!-- .session -->
-
-                <div class="session">
-                    <time>16:45 - 17:30</time>
-                    <h2>Dia a dia de um Pentester profissional e estudo de caso</h2>
-                    <h3>Bruno <span>Oliveira</span></h3>
-                </div>
-                <!-- .session -->
-
-                <div class="session">
-                    <time>17:45 - 18:30</time>
-                    <h2>Apresentação vencedor CTF, agradecimento, encerramento do evento.</h2>
-                </div>
-                <!-- .session -->
-
-
-            </div>
-        </div>
-    </div>
-
-</section>
-
-
-<section id="ingresso" class="section-wrapper pricing-section gray-bg">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="section-title">
-                    <h1>INGRESSO</h1>
-                    <p>*Promocional meio ingresso, leve um litro de leite longa vida que sera doado para a creche de crianças carentes do projeto futuro brilhante - Instituição Flores do Campo.
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-4">
-                <div class="pricing-table-default text-center">
-                    <div class="pricing-head">
-                        <h3>1º LOTE - PROMOCIONAL</h3>
-                        <span class="price"><sup>R$</sup>20</span>
+        <section id="palestras" class="section-wrapper team">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="section-title">
+                            <h1>PALESTRAS</h1>
+                        </div>
                     </div>
-                <!-- <div class="pricing-detail">
-                    <ul class="pricing-list pink-i">
-                        <li>Main keynote speeches</li>
-                        <li>Access to all areas</li>
-                        <li>Lunch on day 1</li>
-                    </ul>
-                </div> -->
-                    <a href="#" class="btn btn-primary">COMPRAR</a>
                 </div>
-            <!-- /.pricing-table-wrapper -->
-            </div>
-        <!-- .col-sm-4 -->
+                <div class="row">
 
-            <div class="col-sm-4">
-                <span class="locked">
-                </span>
-                <div class="pricing-table-default text-center">
-                    <div class="pricing-head">
-                        <h3>2º LOTE</h3>
-                        <span class="price"><sup>$</sup>35</span>
+                    <div class="col-sm-12 col-md-4">
+                        <figure class="thumbnail">
+                            <img src="img/Palestra Jean.jpg" class="img-responsive" alt="Image">
+                            <figcaption class="caption text-center">
+                                <h3>Jean Delefrati</h3>
+                                <h4>XGH E PHP, OU PORQUE VOCÊ DEVE USAR UM WAF</h4>
+                                <p>Muitos programadores inexperientes (ou programadores ruins mesmo) fazem "gambiarras" por
+                                    não pensar direito ou por preguiça, causando vários problemas como lentidão, bugs ou
+                                    permitir vetores de ataques. O objetivo da palestra é mostrar erros grotescos encontrados
+                                    nos mais de 16 anos de carreira na área de programação web do palestrante e o motivo
+                                    pelos quais são ruins, mantendo uma atmosfera descontraída e despojada - depois demonstrar
+                                    como um WAF+CDN funcionam e como podem minimizar alguns desses problemas (mesmo não sendo
+                                    uma solução mágica).</p>
+
+                                <ul class="social-links">
+                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-envelope"></i></a></li>
+                                </ul>
+                            </figcaption>
+                        </figure>
                     </div>
-                    <!-- <div class="pricing-detail">
-                        <ul class="pricing-list pink-i">
-                            <li>Main keynote speeches</li>
-                            <li>Access to all areas</li>
-                            <li>Lunch on day 1</li>
-                        </ul>
-                    </div> -->
-                    <a href="#" class="btn btn-primary">COMPRAR</a>
-                </div>
-                <!-- /.pricing-table-wrapper -->
-            </div>
-        <!-- .col-sm-4 -->
 
-            <div class="col-sm-4">
-                <span class="locked">
-                </span>
-                <div class="pricing-table-default text-center">
-                    <div class="pricing-head">
-                        <h3>3º LOTE</h3>
-                        <span class="price"><sup>$</sup>40</span>
+                    <div class="col-sm-12 col-md-4">
+                        <figure class="thumbnail">
+                            <img src="img/Palestra Julio.jpg" class="img-responsive" alt="Image">
+                            <figcaption class="caption text-center">
+                                <h3>Julio Della Flora</h3>
+                                <h4>HARDWARE HACKING 101: APARATOS INDISPENSÁVEIS PARA A PRÁTICA</h4>
+                                <p>A presente palestra procura introduzir conceitos de hardware hacking bem como o desenvolvimento
+                                    e aplicação de gadgets modificados em testes de invasão. Estudos iniciais sobre eletrônica
+                                    e instrumentos de medidas serão apresentados buscando solidificar uma base de pesquisa
+                                    na área, consecutivamente será abordada a confecção de dispositivos com o objetivo de
+                                    facilitar testes de invasão. Observa-se nessa etapa que produtos comerciais com preço
+                                    elevado podem ser facilmente reproduzidos por uma fração de seu valor, resultando em
+                                    menor dispêndio de recursos e maior aproveitamento acadêmico.</p>
+
+                                <ul class="social-links">
+                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-envelope"></i></a></li>
+                                </ul>
+                            </figcaption>
+                        </figure>
                     </div>
-                    <!-- <div class="pricing-detail">
-                        <ul class="pricing-list pink-i">
-                            <li>Main keynote speeches</li>
-                            <li>Access to all areas</li>
-                            <li>Lunch on day 1</li>
-                        </ul>
-                    </div> -->
-                    <a href="#" class="btn btn-primary">COMPRAR</a>
+
+                    <div class="col-sm-12 col-md-4">
+                        <figure class="thumbnail">
+                            <img src="img/Palestra Bruno.jpg" class="img-responsive" alt="Image">
+                            <figcaption class="caption text-center">
+                                <h3>Bruno Oliveira</h3>
+                                <h4>Dia a dia de um Pentester profissional e estudo de caso</h4>
+                                <p>Apesar de sua popularidade, os serviços de teste de invasão ou penetration test ainda trazem
+                                    muitas dúvidas. Muitos ainda desconhecem quais os meios de execução deste teste e como
+                                    diferenciar este exercício de uma análise de vulnerabilidades automatizada. Durante esta
+                                    palestra, será demonstrado como é realizado um pentest através de um estudo de caso,
+                                    além de proporcionar uma visão abrangente de como é o trabalho de um profissional da
+                                    área. O conteúdo será apresentado de forma a estimular os interessados e também motivar
+                                    empresas do valor da realizacão deste tipo de trabalho em seu ambiente.</p>
+
+                                <ul class="social-links">
+                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-envelope"></i></a></li>
+                                </ul>
+                            </figcaption>
+                        </figure>
+                    </div>
                 </div>
-                <!-- /.pricing-table-wrapper -->
-            </div>
-        <!-- .col-sm-4 -->
-        </div>
-        <!-- /.container -->
-    </div>
-</section>
-<!-- .pricing-section -->
+                <!-- /.container -->
+        </section>
+        <!-- .team -->
 
-
-
-<section id="staff" class="section-wrapper staff staff-bg">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="section-title">
-                    <h1>STAFF</h1>
+        <section id="staff" class="section-wrapper staff gray-bg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="section-title">
+                            <h1>STAFF</h1>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <div class="row">
+                <div class="row">
 
-            <!-- /inicio -->
-            <div class="col-md-2 col-sm-4 col-xs-6 section-margin caption text-center">
-                <img src="img/staff/Bruno Oliveira.jpg" class="img-responsive" alt="Image">
-                <h3>Bruno Oliveira <small>Área de Atuação</small></h3>
-            </div>
-            <!-- /.col-sm-6 -->
-            <!-- /inicio -->
-            <div class="col-md-2 col-sm-4 col-xs-6 section-margin caption text-center">
-                <img src="img/staff/Caio Henrique.jpg" class="img-responsive" alt="Image">
-                <h3>Caio Henrique <small>Área de Atuação</small></h3>
-            </div>
-            <!-- /.col-sm-6 -->
-            <!-- /inicio -->
-            <div class="col-md-2 col-sm-4 col-xs-6 section-margin caption text-center">
-                <img src="img/staff/Cezar Iavorski.jpg" class="img-responsive" alt="Image">
-                <h3>Cezar Iavorski <small>Área de Atuação</small></h3>
-            </div>
-            <!-- /.col-sm-6 -->
-            <!-- /inicio -->
-            <div class="col-md-2 col-sm-4 col-xs-6 section-margin caption text-center">
-                <img src="img/staff/Daniel Gonçalves Araujo.jpg" class="img-responsive" alt="Image">
-                <h3>Daniel Araujo <small>Área de Atuação</small></h3>
-            </div>
-            <!-- /.col-sm-6 -->
-            <!-- /inicio -->
-            <div class="col-md-2 col-sm-4 col-xs-6 section-margin caption text-center">
-                <img src="img/staff/Davi Aquino.jpg" class="img-responsive" alt="Image">
-                <h3>Davi Aquino <small>Área de Atuação</small></h3>
-            </div>
-            <!-- /.col-sm-6 -->
-            <!-- /inicio -->
-            <div class="col-md-2 col-sm-4 col-xs-6 section-margin caption text-center">
-                <img src="img/staff/Douglas Wilian.jpg" class="img-responsive" alt="Image">
-                <h3>Douglas Wilian <small>Área de Atuação</small></h3>
-            </div>
-            <!-- /.col-sm-6 -->
+                    <!-- /inicio -->
+                    <div class="col-md-2 col-sm-4 col-xs-6 section-margin caption text-center">
+                        <img src="img/staff/Bruno Oliveira.jpg" class="img-responsive" alt="Image">
+                        <h3>Bruno Oliveira <small>Área de Atuação</small></h3>
+                    </div>
+                    <!-- /.col-sm-6 -->
+                    <!-- /inicio -->
+                    <div class="col-md-2 col-sm-4 col-xs-6 section-margin caption text-center">
+                        <img src="img/staff/Caio Henrique.jpg" class="img-responsive" alt="Image">
+                        <h3>Caio Henrique <small>Área de Atuação</small></h3>
+                    </div>
+                    <!-- /.col-sm-6 -->
+                    <!-- /inicio -->
+                    <div class="col-md-2 col-sm-4 col-xs-6 section-margin caption text-center">
+                        <img src="img/staff/Daniel Gonçalves Araujo.jpg" class="img-responsive" alt="Image">
+                        <h3>Daniel Araujo <small>Área de Atuação</small></h3>
+                    </div>
+                    <!-- /.col-sm-6 -->
+                    <!-- /inicio -->
+                    <div class="col-md-2 col-sm-4 col-xs-6 section-margin caption text-center">
+                        <img src="img/staff/Davi Aquino.jpg" class="img-responsive" alt="Image">
+                        <h3>Davi Aquino <small>Área de Atuação</small></h3>
+                    </div>
+                    <!-- /.col-sm-6 -->
+                    <!-- /inicio -->
+                    <div class="col-md-2 col-sm-4 col-xs-6 section-margin caption text-center">
+                        <img src="img/staff/Douglas Wilian.jpg" class="img-responsive" alt="Image">
+                        <h3>Douglas Wilian <small>Área de Atuação</small></h3>
+                    </div>
+                    <!-- /.col-sm-6 -->
+                    <!-- /inicio -->
+                    <div class="col-md-2 col-sm-4 col-xs-6 section-margin caption text-center">
+                        <img src="img/staff/Felipe Marinho.jpg" class="img-responsive" alt="Image">
+                        <h3>Felipe Marinho <small>Área de Atuação</small></h3>
+                    </div>
+                    <!-- /.col-sm-6 -->
+                    <!-- /inicio -->
 
-        </div>
-        <!-- .row -->
-        <div class="row">
-
-            <!-- /inicio -->
-            <div class="col-md-2 col-sm-4 col-xs-6 section-margin caption text-center">
-                <img src="img/staff/Felipe Marinho.jpg" class="img-responsive" alt="Image">
-                <h3>Felipe Marinho <small>Área de Atuação</small></h3>
-            </div>
-            <!-- /.col-sm-6 -->
-            <!-- /inicio -->
-            <div class="col-md-2 col-sm-4 col-xs-6 section-margin caption text-center">
-                <img src="img/staff/Fernando M. Thomasella.jpg" class="img-responsive" alt="Image">
-                <h3>Fernando M. Thomasella <small>Área de Atuação</small></h3>
-            </div>
-            <!-- /.col-sm-6 -->
-            <!-- /inicio -->
-            <div class="col-md-2 col-sm-4 col-xs-6 section-margin caption text-center">
-                <img src="img/staff/Frederico Mercer.jpg" class="img-responsive" alt="Image">
-                <h3>Frederico Mercer <small>Área de Atuação</small></h3>
-            </div>
-            <!-- /.col-sm-6 -->
-            <!-- /inicio -->
-            <div class="col-md-2 col-sm-4 col-xs-6 section-margin caption text-center">
-                <img src="img/staff/Jean Delefrati.jpg" class="img-responsive" alt="Image">
-                <h3>Jean Delefrati <small>Área de Atuação</small></h3>
-            </div>
-            <!-- /.col-sm-6 -->
-            <!-- /inicio -->
-            <div class="col-md-2 col-sm-4 col-xs-6 section-margin caption text-center">
-                <img src="img/staff/Julio Della Flora.jpg" class="img-responsive" alt="Image">
-                <h3>Julio Della Flora <small>Área de Atuação</small></h3>
-            </div>
-            <!-- /.col-sm-6 -->
-            <div class="col-md-2 col-sm-4 col-xs-6 section-margin caption text-center">
-                <img src="img/staff/Luiz M. Sanches.jpg" class="img-responsive" alt="Image">
-                <h3>Luiz M. Sanches <small>Área de Atuação</small></h3>
-            </div>
-
-        </div>
-        <!-- .row -->
-
-        <div class="row">
-
-            <!-- <div class="col-md-2 col-sm-0 section-margin caption text-center">
-            </div> -->
-            <div class="col-md-3 col-sm-0 section-margin caption text-center">
-            </div>
-
-            <div class="col-md-2 col-sm-4 col-xs-6 section-margin caption text-center">
-                <img src="img/staff/Maike Meneguetti.jpg" class="img-responsive" alt="Image">
-                <h3>Maike Meneguetti <small>Área de Atuação</small></h3>
-            </div>
-
-            <div class="col-md-2 col-sm-4 col-xs-6 section-margin caption text-center">
-                <img src="img/staff/Robson Rodrigues.jpg" class="img-responsive" alt="Image">
-                <h3>Robson Rodrigues <small>Área de Atuação</small></h3>
-            </div>
-
-            <!-- <div class="col-md-0 col-sm-4">
-            </div> -->
-
-            <div class="col-md-2 col-sm-4 col-xs-6 section-margin caption text-center">
-                <img src="img/staff/Wagner Rodrigues.jpg" class="img-responsive" alt="Image">
-                <h3>Wagner Rodrigues <small>Área de Atuação</small></h3>
-            </div>
-
-        </div>
-
-
-
-
-    </div>
-    <!-- /.container -->
-</section>
-<!-- .team -->
-
-
-
-
-<section id="parceiros" class="section-wrapper client-logo">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="section-title">
-                    <h1>Parceiros</h1>
                 </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-2 col-sm-4 col-xs-6 section-margin">
-                <a href="#"><img src="img/logo-client.jpg" alt="Image"></a>
-            </div>
-            <div class="col-md-2 col-sm-4 col-xs-6 section-margin">
-                <a href="#"><img src="img/logo-client.jpg" alt="Image"></a>
-            </div>
-            <div class="col-md-2 col-sm-4 col-xs-6 section-margin">
-                <a href="#"><img src="img/logo-client.jpg" alt="Image"></a>
-            </div>
-            <div class="col-md-2 col-sm-4 col-xs-6 section-margin">
-                <a href="#"><img src="img/logo-client.jpg" alt="Image"></a>
-            </div>
-            <div class="col-md-2 col-sm-4 col-xs-6 section-margin">
-                <a href="#"><img src="img/logo-client.jpg" alt="Image"></a>
-            </div>
-            <div class="col-md-2 col-sm-4 col-xs-6 section-margin">
-                <a href="#"><img src="img/logo-client.jpg" alt="Image"></a>
-            </div>
-        </div>
-    </div>
-    <!--end of .container -->
-</section>
-<!-- .client-logo -->
+                <!-- .row -->
+                <div class="row">
+                    <div class="col-md-2 col-sm-4 col-xs-6 section-margin caption text-center">
+                        <img src="img/staff/Fernando M. Thomasella.jpg" class="img-responsive" alt="Image">
+                        <h3>Fernando M. Thomasella <small>Área de Atuação</small></h3>
+                    </div>
+                    <!-- /.col-sm-6 -->
+                    <!-- /inicio -->
+                    <div class="col-md-2 col-sm-4 col-xs-6 section-margin caption text-center">
+                        <img src="img/staff/Jean Delefrati.jpg" class="img-responsive" alt="Image">
+                        <h3>Jean Delefrati <small>Área de Atuação</small></h3>
+                    </div>
+                    <!-- /.col-sm-6 -->
+                    <!-- /inicio -->
+                    <div class="col-md-2 col-sm-4 col-xs-6 section-margin caption text-center">
+                        <img src="img/staff/Julio Della Flora.jpg" class="img-responsive" alt="Image">
+                        <h3>Julio Della Flora <small>Área de Atuação</small></h3>
+                    </div>
+                    <!-- /.col-sm-6 -->
+                    <div class="col-md-2 col-sm-4 col-xs-6 section-margin caption text-center">
+                        <img src="img/staff/Luiz M. Sanches.jpg" class="img-responsive" alt="Image">
+                        <h3>Luiz M. Sanches <small>Área de Atuação</small></h3>
+                    </div>
+                    <div class="col-md-3 col-sm-0 section-margin caption text-center">
+                    </div>
 
+                    <div class="col-md-2 col-sm-4 col-xs-6 section-margin caption text-center">
+                        <img src="img/staff/Maike Meneguetti.jpg" class="img-responsive" alt="Image">
+                        <h3>Maike Meneguetti <small>Área de Atuação</small></h3>
+                    </div>
 
-<section id="localizacao" class="section-wrapper  gray-bg">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="section-title">
-                    <h1>LOCALIZAÇÃO</h1>
+                    <div class="col-md-2 col-sm-4 col-xs-6 section-margin caption text-center">
+                        <img src="img/staff/Robson Rodrigues.jpg" class="img-responsive" alt="Image">
+                        <h3>Robson Rodrigues <small>Área de Atuação</small></h3>
+                    </div>
+
                 </div>
-            </div>
-        </div>
-        <!-- /.row-->
-
-        <div class="row">
-            <div class="col-md-12">
-                <div id="googleMap"></div>
-
-                <p class="text-center"><b>RUA LUIZ LERCO, S/N<br>Bairro: GLEBA PALHANO<br>Jardim Burle Marx<br>Londrina, PR<br>86047-790</b></p><br>
-
-                <script>
-                function myMap() {
-                var style = [{
-                    "stylers" : [{
-                        "hue" : "#000"
-                    }, {
-                        "saturation" : 0
-                    }, {
-                        "gamma" : 1.15
-                    }, {
-                        "lightness" : 5
-                    }]
-                }];
-                  var myLatLng = {lat: -23.343812, lng: -51.180367};
-
-                  var map = new google.maps.Map(document.getElementById('googleMap'), {
-                    zoom: 16,
-                    center: myLatLng,
-                    styles: style
-                  });
-
-                  var marker = new google.maps.Marker({
-                    position: myLatLng,
-                    map: map,
-                    title: 'Londrina Hacker Conference'
-                  });
-                }
-                </script>
-            </div>
-        </div>
-        <!-- .row-->
-
-        <div class="row">
-            <div class="col-md-12">
-                <div class="section-title">
-                    <h2>Receba Informações</h2>
-                    <p>Não perca o evento!</p>
-                </div>
+                <!-- .row -->
 
                 <div class="row">
-                    <div class="col-md-12 text-center">
-                        <a href="#">
-                            <p>Acompanhe as novidades do evento pelo Facebook!</p>
-                            <img src="img/facebook-icon.png" alt="" width=200>
-                        </a>
+
+                    <!-- <div class="col-md-2 col-sm-0 section-margin caption text-center">
+            </div> -->
+
+                    <!-- <div class="col-md-0 col-sm-4">
+            </div> -->
+
+                    <div class="col-md-2 col-sm-4 col-xs-6 section-margin caption text-center">
+                        <img src="img/staff/Wagner Rodrigues.jpg" class="img-responsive" alt="Image">
+                        <h3>Wagner Rodrigues <small>Área de Atuação</small></h3>
+                    </div>
+
+                </div>
+
+
+
+
+            </div>
+            <!-- /.container -->
+        </section>
+        <!-- .team -->
+
+
+
+
+        <section id="parceiros" class="section-wrapper client-logo">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="section-title">
+                            <h1>Parceiros</h1>
+                        </div>
                     </div>
                 </div>
-                    <!-- <form id="contactForm" class="subscribe-form form-inline" action="sendemail.php" method="POST">
+                <div class="row">
+                    <div class="col-md-4 col-sm-6 col-xs-12 section-margin">
+                        <a target="_blank" href="https://www.facebook.com/GGeSportsBarLondrina/?ref=br_rs"><img src="img/parceiros/gg_e_sports.jpeg" alt="Image"></a>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12 section-margin">
+                        <a href="#"><img src="img/logo-client.jpg" alt="Image"></a>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12 section-margin">
+                        <a href="#"><img src="img/logo-client.jpg" alt="Image"></a>
+                    </div>
+                </div>
+            </div>
+            <!--end of .container -->
+        </section>
+        <!-- .client-logo -->
+
+
+        <section id="localizacao" class="section-wrapper  gray-bg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="section-title">
+                            <h1>LOCALIZAÇÃO</h1>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.row-->
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div id="googleMap"></div>
+
+                        <p class="text-center"><b>Rua Fernando de Noronha 712 AB, Centro<br>Londrina, PR<br>86020-300</b></p><br>
+
+                        <script>
+                            function myMap() {
+                                var style = [{
+                                    "stylers": [{
+                                        "hue": "#000"
+                                    }, {
+                                        "saturation": 0
+                                    }, {
+                                        "gamma": 1.15
+                                    }, {
+                                        "lightness": 5
+                                    }]
+                                }];
+                                var myLatLng = { lat: -23.3075406, lng: -51.1696825 };
+
+                                var map = new google.maps.Map(document.getElementById('googleMap'), {
+                                    zoom: 16,
+                                    center: myLatLng,
+                                    styles: style
+                                });
+
+                                var marker = new google.maps.Marker({
+                                    position: myLatLng,
+                                    map: map,
+                                    title: 'Londrina Hacker Conference'
+                                });
+                            }
+                        </script>
+                    </div>
+                </div>
+                <!-- .row-->
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="section-title">
+                            <h2>Receba Informações</h2>
+                            <p>Não perca o evento!</p>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-12 text-center">
+                                <a href="#">
+                                    <p>Acompanhe as novidades do evento pelo Facebook!</p>
+                                    <img src="img/facebook-icon.png" alt="" width=200>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- <form id="contactForm" class="subscribe-form form-inline" action="sendemail.php" method="POST">
                         <div class="form-group">
                             <label for="emailTwo" class="sr-only">E-mail</label>
                             <input type="email" class="form-control input-lg" required="" id="emailTwo" name="email" placeholder="Digite seu e-mail">
                         </div>
                         <button type="submit" class="btn btn-primary btn-lg">Enviar</button>
                     </form> -->
+                    </div>
                 </div>
+
             </div>
+        </section>
+        <!-- contact-section -->
+
+
+        <footer class="footer">
+            <div class="copyright-section">
+                <div class="container">
+                    <div class="col-md-12">
+                        <div class="copytext text-center">&copy; lhconference. Todos os direitos reservados.</div>
+                    </div>
+                </div>
+                <!-- .container -->
+            </div>
+            <!-- .copyright-section -->
+        </footer>
+        <!-- .footer -->
 
         </div>
-    </section>
-    <!-- contact-section -->
+        <!-- #main-wrapper -->
 
 
-    <footer class="footer">
-        <div class="copyright-section">
-            <div class="container">
-                <div class="col-md-12">
-                    <div class="copytext text-center">&copy; lhconference. Todos os direitos reservados.</div>
-                </div>
-            </div>
-            <!-- .container -->
-        </div>
-        <!-- .copyright-section -->
-    </footer>
-    <!-- .footer -->
+        <!-- jquery -->
+        <script src="js/jquery-2.1.4.min.js"></script>
 
-</div>
-<!-- #main-wrapper -->
+        <!-- Bootstrap -->
+        <script src="js/bootstrap.min.js"></script>
 
+        <!-- Plugin JavaScript -->
+        <script src="js/jquery.easing.min.js"></script>
 
-<!-- jquery -->
-<script src="js/jquery-2.1.4.min.js"></script>
+        <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
 
-<!-- Bootstrap -->
-<script src="js/bootstrap.min.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBwT-nBVd_LvGp-RKFitZ_WFQEwbhbA4dc&callback=myMap"></script>
 
-<!-- Plugin JavaScript -->
-<script src="js/jquery.easing.min.js"></script>
-
-<!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
-
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBwT-nBVd_LvGp-RKFitZ_WFQEwbhbA4dc&callback=myMap"></script>
-
-<!--<script src="js/one-page-nav.js"></script>-->
-<script src="js/scripts.js"></script>
+        <!--<script src="js/one-page-nav.js"></script>-->
+        <script src="js/scripts.js"></script>
 </body>
+
 </html>

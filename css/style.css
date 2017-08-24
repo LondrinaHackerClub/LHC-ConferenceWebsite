@@ -52,7 +52,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     margin : 0 0 15px;
-    color  : #0e1555;
+    color: #ffffff;
     }
 
 h1 {
@@ -192,11 +192,9 @@ button:focus,
     border-bottom    : 1px solid #eeeeee;
     }
 
-.staff-bg {
-    background-color : #cccccc;
-    border-top       : 3px solid #eeeeee;
-    border-bottom    : 1px solid #eeeeee;
-    }
+.gray-bg h1, .gray-bg h2, .gray-bg h3, .gray-bg h4, .gray-bg h5, .gray-bg h6, .caption h1, .caption h2, .caption h3, .caption h4, .caption h6, .caption p{
+        color            : #0e1555;
+}
 	
 .parceiros-bg {
     background-color : #f0f1f3;
@@ -212,7 +210,7 @@ button:focus,
  *  main Wrapper
  * -------------------*/
 #main-wrapper {
-    background : #ffffff;
+    background : transparent;
     overflow   : hidden;
     }
 
@@ -358,24 +356,28 @@ button:focus,
  * Jumbotron
  *-------------------*/
 
-.jumbotron {
+ #main-wrapper {
     background            : url("../img/img-jumbotron-bg.jpg");
     background-size       : cover;
-    padding               : 0;
-    margin                : 0;
-    height                : 100vh;
-    min-height            : 700px;
-    vertical-align        : middle;
-    position              : relative;
     background-attachment : fixed;
     background-repeat     : no-repeat;
     background-position   : center center;
     overflow              : hidden;
+    vertical-align        : middle;
+    position              : relative;
+
+}
+
+.jumbotron {
+    height                  : 100vh;
+    padding                 : 0;
+    margin                  : 0;
+    background-color        : transparent;
     }
 
 .jumbotron .content {
-    color             : #ffffff;
-    position          : absolute;
+    background-color  : transparent;
+    position          : relative;
     top               : 50%;
     left              : 0;
     right             : 0;
@@ -400,8 +402,9 @@ button:focus,
     }
 
 .jumbotron .content .event-date {
-    font-size     : 24px;
-    margin-bottom : 40px;
+    font-size       : 24px;
+    margin-bottom   : 40px;
+    color           : #fff;
     }
 
 .jumbotron .btn {
@@ -426,7 +429,8 @@ button:focus,
  * Section Wrapper
  *---------------------------*/
 .section-wrapper {
-    padding : 50px 0;
+    margin-top: 25px;
+    padding: 100px 0;
     }
 
 /*---------------------------
@@ -483,17 +487,22 @@ button:focus,
     }
 
 .team .thumbnail img {
-    width : 100%;
+    border-radius       : 25px;
+    box-shadow          : 3px 3px 0px 0px rgba(255, 255, 255, 0.31);
+    width               : 100vh;
     }
 
 .team .thumbnail .caption {
-    padding          : 10px;
+    padding             : 10px;    
+    background-color    : white;
+    border-radius       : 25px;
+    margin-top          : 1.2rem;    
+    height: 550px;
     }
 
 .team .thumbnail h3 {
     font-size        : 18px;
-    font-weight: bold;
-
+    font-weight      : bold;
     margin           : 0 40px;
     text-transform   : uppercase;
     padding          : 10px 0;
@@ -870,4 +879,8 @@ button:focus,
     background-color: #f0f1f3;
     z-index: 8;
     opacity: 0.8;
+}
+
+#sobre, #parceiros { 
+    min-height: 100vh;
 }
