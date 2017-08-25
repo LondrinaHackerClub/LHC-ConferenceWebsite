@@ -79,7 +79,11 @@
                 <div class="event-date">07 de Outubro de 2017, Londrina/PR</div>
                 <h1>Londrina Hacker Conference<br>1ª Edição</h1>
                 <p class="lead">Um evento da comunidade para a comunidade Hacker de Londrina e região.</p>
-                <button onclick="playAudio()" type="button" class="btn btn-default btn-lg"><a target="_blank" href="https://www.sympla.com.br/londrina-hacker-conference__177847">QUERO PARTICIPAR!</a></button>
+                <!--  
+                  <button onclick="playAudio()" type="button" class="btn btn-default btn-lg">
+                    <a target="_blank" href="https://www.sympla.com.br/londrina-hacker-conference__177847">QUERO PARTICIPAR!</a>
+                  </button>
+                -->
             </div>
         </div>
         <!-- .about-jumbotron -->
@@ -90,29 +94,24 @@
                 <div class="row">
                     <div class="col-md-12">
                         <h1> Londrina Hacker Conference 1º edição. </h1>
-                        <p class="lead">
-                            Evento feito da comunidade para comunidade, para quem respira hacking e segurança da informação.
+                        <p>
+                            Evento feito pela comunidade para quem respira <span class="italic">hacking</span> e <span class="italic">segurança da informação</span>.
                         </p>
-                        <p class="lead">
-                            O Londrina Hacker Conference irá acontecer no primeiro sábado de outubro, dia <strong>07/10/2017 </strong>,
-                            começando às 13:30 e terminando quando o ultimo participante deixar o local do evento.
-                        </p>
-                        <p class="lead">
-                            Eventos com diversas palestras feita por profissionais renomados em segurança da informação.
-                        </p>
-
+                        <div class="lead">
+                          <p>
+                            O Londrina Hacker Conference irá acontecer no primeiro sábado de outubro, dia <span class="bold">07/10/2017 </span>,
+                            iniciando às <span class="bold">15:00</span>.
+                          </p>
+                          <p>
+                            O Evento contará com três palestras feitas por grandes profissionais da área da Segurança da Informação de nossa região, seguido de um descontraido bate bapo entre o público presente.
+                          </p>
+                          <br>
+                          
+                          <p class="text-center">
+                            Não fique de fora dessa!
+                          </p>
+                        </div>
                     </div>
-                    <!--
-                <div class="col-md-2">
-                    <address>
-                        <strong>Eventas, Inc.</strong><br>
-                        1355 Market Street<br>
-                        Suite 900<br>
-                        San Francisco, CA 94103<br>
-                        <abbr title="Phone">P:</abbr> (123) 456-7890
-                    </address>
-                </div>
-            -->
                 </div>
             </div>
         </section>
@@ -129,44 +128,48 @@
                 </div>
                 <div class="row">
 
-                    <div class="col-sm-12 col-md-4">
+                    <div class="col-sm-12 col-md-6">
                         <figure class="thumbnail">
                             <img src="img/Palestra Jean.jpg" class="img-responsive" alt="Image">
-                            <figcaption class="caption text-center">
-                                <h3>Jean Delefrati</h3>
-                                <h4>XGH E PHP, OU PORQUE VOCÊ DEVE USAR UM WAF</h4>
-                                <p>Muitos programadores inexperientes (ou programadores ruins mesmo) fazem "gambiarras" por
-                                    não pensar direito ou por preguiça, causando vários problemas como lentidão, bugs ou
-                                    permitir vetores de ataques. O objetivo da palestra é mostrar erros grotescos encontrados
-                                    nos mais de 16 anos de carreira na área de programação web do palestrante e o motivo
-                                    pelos quais são ruins, mantendo uma atmosfera descontraída e despojada - depois demonstrar
-                                    como um WAF+CDN funcionam e como podem minimizar alguns desses problemas (mesmo não sendo
-                                    uma solução mágica).</p>
-
-                                <ul class="social-links">
-                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-envelope"></i></a></li>
-                                </ul>
+                            <figcaption class="caption">
+                                <div class="text-center">
+                                  <h3>Jean Delefrati</h3>
+                                  <h4>XGH E PHP, OU PORQUE VOCÊ DEVE USAR UM WAF</h4>
+                                 </div>
+                                      <p class="text-justified">Muitos programadores inexperientes (ou programadores ruins mesmo) fazem "gambiarras" por
+                                          não pensar direito ou por preguiça, causando vários problemas como lentidão, bugs ou
+                                          permitir vetores de ataques. O objetivo da palestra é mostrar erros grotescos encontrados
+                                          nos mais de 16 anos de carreira na área de programação web do palestrante e o motivo
+                                          pelos quais são ruins, mantendo uma atmosfera descontraída e despojada - depois demonstrar
+                                          como um WAF+CDN funcionam e como podem minimizar alguns desses problemas (mesmo não sendo
+                                          uma solução mágica).
+                                      </p>
+                                      <ul class="social-links">
+                                          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                          <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                          <li><a href="#"><i class="fa fa-envelope"></i></a></li>
+                                      </ul>
                             </figcaption>
                         </figure>
                     </div>
 
-                    <div class="col-sm-12 col-md-4">
+                    <div class="col-sm-12 col-md-6">
                         <figure class="thumbnail">
                             <img src="img/Palestra Julio.jpg" class="img-responsive" alt="Image">
-                            <figcaption class="caption text-center">
-                                <h3>Julio Della Flora</h3>
-                                <h4>HARDWARE HACKING 101: APARATOS INDISPENSÁVEIS PARA A PRÁTICA</h4>
-                                <p>A presente palestra procura introduzir conceitos de hardware hacking bem como o desenvolvimento
+                            <figcaption class="caption">
+                                <div class="text-center">
+                                  <h3>Julio Della Flora</h3>
+                                  <h4>HARDWARE HACKING 101: APARATOS INDISPENSÁVEIS PARA A PRÁTICA</h4>
+                                </div>
+                                <p class="text-justified">A presente palestra procura introduzir conceitos de hardware hacking bem como o desenvolvimento
                                     e aplicação de gadgets modificados em testes de invasão. Estudos iniciais sobre eletrônica
                                     e instrumentos de medidas serão apresentados buscando solidificar uma base de pesquisa
                                     na área, consecutivamente será abordada a confecção de dispositivos com o objetivo de
                                     facilitar testes de invasão. Observa-se nessa etapa que produtos comerciais com preço
                                     elevado podem ser facilmente reproduzidos por uma fração de seu valor, resultando em
-                                    menor dispêndio de recursos e maior aproveitamento acadêmico.</p>
-
+                                    menor dispêndio de recursos e maior aproveitamento acadêmico.
+                                </p>
                                 <ul class="social-links">
                                     <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                                     <li><a href="#"><i class="fa fa-twitter"></i></a></li>
@@ -177,20 +180,23 @@
                         </figure>
                     </div>
 
-                    <div class="col-sm-12 col-md-4">
+                    <div class="col-sm-12 col-md-6">
                         <figure class="thumbnail">
                             <img src="img/Palestra Bruno.jpg" class="img-responsive" alt="Image">
-                            <figcaption class="caption text-center">
-                                <h3>Bruno Oliveira</h3>
-                                <h4>Dia a dia de um Pentester profissional e estudo de caso</h4>
-                                <p>Apesar de sua popularidade, os serviços de teste de invasão ou penetration test ainda trazem
-                                    muitas dúvidas. Muitos ainda desconhecem quais os meios de execução deste teste e como
-                                    diferenciar este exercício de uma análise de vulnerabilidades automatizada. Durante esta
-                                    palestra, será demonstrado como é realizado um pentest através de um estudo de caso,
-                                    além de proporcionar uma visão abrangente de como é o trabalho de um profissional da
-                                    área. O conteúdo será apresentado de forma a estimular os interessados e também motivar
-                                    empresas do valor da realizacão deste tipo de trabalho em seu ambiente.</p>
-
+                            <figcaption class="caption ">
+                                <div class="text-center">
+                                  <h3>Bruno Oliveira</h3>
+                                  <h4>Dia a dia de um Pentester profissional e estudo de caso</h4>
+                                </div>
+                                <p class="text-justified">
+                                    Apesar de sua popularidade, os serviços de teste de invasão ou penetration test ainda trazem
+                                      muitas dúvidas. Muitos ainda desconhecem quais os meios de execução deste teste e como
+                                      diferenciar este exercício de uma análise de vulnerabilidades automatizada. Durante esta
+                                      palestra, será demonstrado como é realizado um pentest através de um estudo de caso,
+                                      além de proporcionar uma visão abrangente de como é o trabalho de um profissional da
+                                      área. O conteúdo será apresentado de forma a estimular os interessados e também motivar
+                                      empresas do valor da realizacão deste tipo de trabalho em seu ambiente.
+                                </p>
                                 <ul class="social-links">
                                     <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                                     <li><a href="#"><i class="fa fa-twitter"></i></a></li>
@@ -316,10 +322,6 @@
             <!-- /.container -->
         </section>
         <!-- .team -->
-
-
-
-
         <section id="parceiros" class="section-wrapper client-logo">
             <div class="container">
                 <div class="row">
@@ -429,7 +431,7 @@
             <div class="copyright-section">
                 <div class="container">
                     <div class="col-md-12">
-                        <div class="copytext text-center">&copy; lhconference. Todos os direitos reservados.</div>
+                        <div class="copytext text-center">&copy; Londrina Hacker Conference. Todos os direitos reservados ao Londrina Hacker Club.</div>
                     </div>
                 </div>
                 <!-- .container -->

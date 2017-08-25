@@ -279,8 +279,7 @@ button:focus,
 /*Navigation Style*/
 
 .main-menu .navbar-right {
-    margin-right : -15px;
-	margin-top : 15px;
+		margin-top : 15px;
     }
 
 .main-menu .nav li a {
@@ -429,7 +428,7 @@ button:focus,
  * Section Wrapper
  *---------------------------*/
 .section-wrapper {
-    margin-top: 25px;
+    margin-top: 50px;
     padding: 100px 0;
     }
 
@@ -488,8 +487,8 @@ button:focus,
 
 .team .thumbnail img {
     border-radius       : 25px;
-    box-shadow          : 3px 3px 0px 0px rgba(255, 255, 255, 0.31);
-    width               : 100vh;
+    box-shadow          : 3px 3px 0px 0px rgba(255, 255, 255, 0.3);
+		max-height          : 350px;
     }
 
 .team .thumbnail .caption {
@@ -500,7 +499,7 @@ button:focus,
     height: 550px;
     }
 
-.team .thumbnail h3 {
+.team .thumbnail h3, {
     font-size        : 18px;
     font-weight      : bold;
     margin           : 0 40px;
@@ -881,6 +880,27 @@ button:focus,
     opacity: 0.8;
 }
 
-#sobre, #parceiros { 
+#sobre {	
+    min-height: 50vh;
+		margin: 0 auto;
+}
+
+#parceiros { 
     min-height: 100vh;
+}
+
+.italic {
+	font-style: italic;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.text-left {
+	text-align: left;
+}
+
+.text-justified {
+	text-align: justify;
 }
