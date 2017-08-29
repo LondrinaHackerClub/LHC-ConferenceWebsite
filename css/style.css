@@ -477,6 +477,11 @@ button:focus,
     background-color : transparent;
     border           : 0;
     margin-bottom: 30px;
+    overflow-x: hidden;
+    -webkit-transition : all 0.5s ease-in-out 0s;
+    -moz-transition    : all 0.5s ease-in-out 0s;
+    -o-transition      : all 0.5s ease-in-out 0s;
+    transition         : all 0.5s ease-in-out 0s;
     }
 
 @media (max-width : 767px) {
@@ -486,26 +491,36 @@ button:focus,
     }
 
 .team .thumbnail img {
+    z-index: 5;
     border-radius       : 25px;
     box-shadow          : 3px 3px 0px 0px rgba(255, 255, 255, 0.3);
     max-height          : 100%;
+    position: relative;
     }
 
 .team .thumbnail .caption {
     padding             : 10px;    
     background-color    : white;
     border-radius       : 25px;
-    margin-top          : 1.2rem;    
-    height: 550px;
+    margin-top          : 1.2rem; 
+    height: 475px;
     }
 
-.team .thumbnail h3, {
+.team .thumbnail .caption p {
+    font-size: .9em;
+}
+
+.team .thumbnail h3 {
     font-size        : 18px;
     font-weight      : bold;
     margin           : 0 40px;
     text-transform   : uppercase;
-    padding          : 10px 0;
+    border-bottom: 2px solid #000;
     }
+.team .thumbnail h4 {
+    font-size        : 16px;
+    margin-top       : 15px;
+}
 
 
 
@@ -882,7 +897,7 @@ button:focus,
 
 #sobre {	
     min-height: 50vh;
-		margin: 0 auto;
+    margin: 0 auto;
 }
 
 #parceiros { 
@@ -905,17 +920,32 @@ button:focus,
 	text-align: justify;
 }
 
-.thumbnail .bio {
+.team .thumbnail {
+    -webkit-transition : all 0.5s ease-in-out 0s;
+    -moz-transition    : all 0.5s ease-in-out 0s;
+    -o-transition      : all 0.5s ease-in-out 0s;
+    transition         : all 0.5s ease-in-out 0s;
+}
+
+.team .thumbnail .bio {
     top: 0;
-    left: 0;
+    left: 100%;
     width: 100%;
     height: 100%;
     padding: 25px;
     position: absolute;
     box-sizing: border-box;
-    transition: .5s;
+    transition         : all 0.5s ease-in-out 0s;
 }
-.thumbnail .bio h2 {
+
+/*.team .thumbnail:hover > img {
+    left: -100%;
+}
+.team .thumbnail:hover .bio{
+    left: 0;
+}
+*/
+.team .thumbnail .bio h2 {
     color: #fff;
     text-align: center;
     margin: 0;
