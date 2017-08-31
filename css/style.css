@@ -500,7 +500,7 @@ button:focus,
 
 .team .thumbnail .caption {
     padding             : 10px;    
-    background-color    : white;
+    /*background-color    : white; ----  fundo palestrantes */
     border-radius       : 25px;
     margin-top          : 1.2rem; 
     height: 475px;
