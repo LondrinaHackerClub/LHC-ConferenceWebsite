@@ -43,7 +43,6 @@ body {
     color       : #353e55;
     font-weight : 100;
     background  : #171717;
-    border      : 10px solid #171717;
     }
 
 /* --------------------------------------
@@ -76,7 +75,7 @@ h3 {
 h4 {
     font-size   : 18px;
     line-height : 1.5em;
-    font-weight : 300;
+    font-weight: 300;
     }
 
 h5 {
@@ -192,8 +191,20 @@ button:focus,
     border-bottom    : 1px solid #eeeeee;
     }
 
-.gray-bg h1, .gray-bg h2, .gray-bg h3, .gray-bg h4, .gray-bg h5, .gray-bg h6, .caption h1, .caption h2, .caption h3, .caption h4, .caption h6, .caption p{
+.gray-bg h1, .gray-bg h2, .gray-bg h3, .gray-bg h4, .gray-bg h5, .gray-bg h6 {
         color            : #0e1555;
+}
+.caption h1, .caption h2, .caption h3, .caption h4, .caption h6, .caption p {
+    color            : #fff;
+
+}
+
+.caption h4 {
+    font-weight: 400;
+    border-bottom: 2px solid #fff;
+    border-top: 2px solid #fff;
+    padding-bottom: 10px;
+    padding-top: 10px;
 }
 	
 .parceiros-bg {
@@ -500,10 +511,10 @@ button:focus,
 
 .team .thumbnail .caption {
     padding             : 10px;    
-    background-color    : white;
+    /*background-color    : white; ----  fundo palestrantes */
     border-radius       : 25px;
     margin-top          : 1.2rem; 
-    height: 475px;
+    height: 500px;
     }
 
 .team .thumbnail .caption p {
@@ -901,7 +912,7 @@ button:focus,
 }
 
 #parceiros { 
-    min-height: 100vh;
+    min-height: 50vh;
 }
 
 .italic {
