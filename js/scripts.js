@@ -1,3 +1,5 @@
+var played = false;
+
 jQuery(function ($) {
 
     'use strict';
@@ -38,6 +40,19 @@ jQuery(function ($) {
             }, 1500, 'easeInOutExpo');
         });
     }());
+    
+    (function () {
+        $('#menu-palestras').on('click', function (e) {
+            setTimeout(function(){
+                if(!played){
+                    playAudio();
+                    played = true;
+                }
+            }, 500);
+        });
+    }());
+
+    
 
     // --------------------------------------------------------------------
     // Closes the Responsive Menu on Menu Item Click
